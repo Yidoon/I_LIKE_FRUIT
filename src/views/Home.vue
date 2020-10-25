@@ -6,7 +6,7 @@
           <el-row :gutter="10">
             <el-col :span="20">
               <div class="search-area" id="search-area">
-                <el-input placeholder="请输入内容" prefix-icon="el-icon-search" v-model="searchKey"></el-input>
+                <el-input placeholder="请输入内容..." prefix-icon="el-icon-search" v-model="searchKey"></el-input>
               </div>
             </el-col>
             <el-col :span="4">
@@ -18,7 +18,7 @@
                     <li @click="jumpSomePage('admiredList')">我点赞过的</li>
                   </ul>
                   <ul v-if="!isLogin">
-                    <li @click="toLogin">登录</li>
+                    <li @click="toLogin">登 录</li>
                   </ul>
                 </div>
               </div>

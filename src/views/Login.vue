@@ -12,8 +12,8 @@
         </div>
       </div>
       <div class="btn-handdle" @click="submitInfo">
-        <span v-if="currentAccountType === 'login'">登录</span>
-        <span v-if="currentAccountType === 'register'">注册</span>
+        <span v-if="currentAccountType === 'login'">登 录</span>
+        <span v-if="currentAccountType === 'register'">注 册</span>
       </div>
     </div>
     <div class="register-form"></div>
@@ -54,7 +54,7 @@ export default {
           .then((res) => {
             console.log(res)
             this.$message({
-              message: "登录成功",
+              message: "恭喜，登录成功",
               type: "success"
             });
             this.$router.push({
